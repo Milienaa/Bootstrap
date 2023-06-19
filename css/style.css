@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,700&family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --indigo: #34497C;
+    --lightblue: #4B69B1;
+    --silver: #585858;
+    --lightsilver: #828282;
+    --orange: #FBA702;
+    --darkindigo: #253458;
+    --black: #000;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    line-height: 1.3em;
+    color: var(--lightsilver);
+}
+
+/*TOP section*/
+.top {
+    background-color: var(--indigo);
+    padding: 30px 0;
+    color: #fff;
+}
+
+.top p {
+    margin: 0;
+}
+
+.logo {
+    text-align: center;
+}
+
+/*Firstscreen*/
+
+.firstscreen {
+    background-image: url(../img/pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-height: calc(100vh - 110px);
+    padding: 15px 0;
+}
+
+form {
+    background-color: var(--lightblue);
+    color: #fff;
+    padding: 50px 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.firstscreen h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    background-image: url(../img/line.svg);
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.firstscreen span {
+    background-color: var(--lightblue);
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.firstscreen p {
+    font-size: 1.5em;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    display: block;
+    height: 50px;
+    background-color: var(--indigo);
+    color: #fff;
+
+}
+
+input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0 24px;
+}
+
+input:focus {
+    color: #fff;
+    background-color: var(--darkindigo);
+}
+
+button {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 0 24px;
+    font-size: 24px;
+}
+
+.lenta {
+    background-image: url(../img/bg_lenta.svg);
+    height: 117px;
+    margin: 30px -26px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lenta::after, .lenta::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 13px solid #A86F00;
+    position: absolute;
+    bottom: -13px;
+}
+
+.lenta::before {
+    border-left: 13px solid transparent;
+    left: 0;
+}
+
+.lenta::after {
+    border-right: 13px solid transparent;
+    right: 0;
+}
+
+.steps {
+    background-image: url(../img/bg1.png);
+}
+
+.gallery {
+
+}
+
+.testimonials{
+    background-image: url(../img/bg2.jpg);
+}
+
+.videosection {
+
+}
+
+.subscribe {
+    background-color: var(--orange);
+}
+
+.footer {
+    background-color: var(--black);
+}
+
+@media screen and (min-width: 768px){
+    .logo {
+        text-align: left;
+    }
+
+    .firstscreen {
+        padding: 70px 0;
+    }
+}
